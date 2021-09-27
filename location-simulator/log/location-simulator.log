@@ -1,0 +1,27 @@
+2021-09-14 00:26:31.332  INFO 8208 --- [restartedMain] c.l.s.l.LocationSimulatorApplication     : Starting LocationSimulatorApplication using Java 15.0.2 on DESKTOP-6SJ4H9B with PID 8208 (D:\git\location-simulator\target\classes started by risha in D:\git\location-simulator)
+2021-09-14 00:26:31.345  INFO 8208 --- [restartedMain] c.l.s.l.LocationSimulatorApplication     : No active profile set, falling back to default profiles: default
+2021-09-14 00:26:31.449  INFO 8208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 00:26:31.449  INFO 8208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 00:26:32.750  INFO 8208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-14 00:26:32.763  INFO 8208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 00:26:32.763  INFO 8208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 00:26:32.916  INFO 8208 --- [restartedMain] o.a.c.c.C.[.[.[/locationsimulator]       : Initializing Spring embedded WebApplicationContext
+2021-09-14 00:26:32.916  INFO 8208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+2021-09-14 00:26:34.104  INFO 8208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 00:26:34.114  INFO 8208 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-09-14 00:26:34.236  INFO 8208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/locationsimulator'
+2021-09-14 00:26:34.272  INFO 8208 --- [restartedMain] c.l.s.l.LocationSimulatorApplication     : Started LocationSimulatorApplication in 3.582 seconds (JVM running for 4.908)
+2021-09-14 00:26:36.526  INFO 8208 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/locationsimulator]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 00:26:36.527  INFO 8208 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-14 00:26:36.528  INFO 8208 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-09-14 00:27:19.590  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.c.LocationSimulatorResource      : Inside resource getlocation method, parameters latitude [12.93175, 77.62872] longitude [12.92662, 77.63696]
+2021-09-14 00:27:19.593  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.s.LocationSimulatorService       : Inside service getLocationPoints method, parameters latitude [LocationPointModel [latitude=12.93175, longitude=77.62872]] longitude [LocationPointModel [latitude=12.92662, longitude=77.63696]]
+2021-09-14 00:27:19.594  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.dao.LocationSimulatorDAO         : Inside DAO getLocationPoints method, parameters latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:19.594  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.dao.LocationSimulatorDAO         : https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={destination}&key={key}
+2021-09-14 00:27:20.404  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.dao.LocationSimulatorDAO         : Exit DAO getLocationPoints method, parameters latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:20.404  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.s.LocationSimulatorService       : Service getLocationPoints method, # of steps [5] for latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:20.405  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.s.LocationSimulatorService       : Service getLocationPoints method, # of polyline from google api [66] for latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:20.415  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.s.LocationSimulatorService       : Service getLocationPoints method, # of polyline after processing [25] for latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:20.415  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.s.LocationSimulatorService       : Exist service getLocationPoints method, parameters latitude [LocationPoint [lat=12.93175, lng=77.62872]] longitude [LocationPoint [lat=12.92662, lng=77.63696]]
+2021-09-14 00:27:20.415  INFO 8208 --- [http-nio-8080-exec-1] c.l.s.l.c.LocationSimulatorResource      : Exist resource getlocation method, parameters latitude [12.93175, 77.62872] longitude [12.92662, 77.63696]
+2021-09-14 00:27:47.763  INFO 8208 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
