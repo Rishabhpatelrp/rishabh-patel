@@ -138,3 +138,24 @@ watch -n 0.1 curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/t
 docker push in28min/mmv2-currency-conversion-service:0.0.12-SNAPSHOT
 docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 ```
+
+### check deployment status and pods
+```
+kubectl rollout status deployment/docker-demo
+kubectl get pods -l app=docker-demo
+```
+
+### Delete All Resources (Deployment + Service + ConfigMap)
+```
+kubectl delete -f dockerdemo.yaml
+```
+
+### Delete all resource by label
+```
+kubectl delete all -l app=docker-demo
+```
+
+### Delete deployment only
+```
+kubectl delete deployment docker-demo
+```
